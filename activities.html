@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BM - Activities</title>
+    <meta name="description" content="Explore BM Company's past and upcoming activities, events, and projects.">
+    
+    <!-- Bootstrap CSS from CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) for scrolling animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="BM Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="activities.html">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="apply.html">How to Apply</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header bg-primary text-white py-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4">Our Activities</h1>
+                        <p class="lead">Stay updated with what we're doing and how we're making an impact</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Categories -->
+        <section class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mb-5" data-aos="fade-up">
+                        <h2 class="section-title text-center">Activity Categories</h2>
+                        <p class="lead">Explore our diverse range of activities and engagements</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 mb-4">
+                        <ul class="nav nav-pills justify-content-center" id="activitiesTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab" aria-controls="upcoming" aria-selected="true">Upcoming Events</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ongoing-tab" data-bs-toggle="pill" data-bs-target="#ongoing" type="button" role="tab" aria-controls="ongoing" aria-selected="false">Ongoing Projects</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="past-tab" data-bs-toggle="pill" data-bs-target="#past" type="button" role="tab" aria-controls="past" aria-selected="false">Past Activities</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content" id="activitiesTabContent">
+                    <!-- Upcoming Events -->
+                    <div class="tab-pane fade show active" id="upcoming" role="tabpanel" aria-labelledby="upcoming-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/event1.jpg" class="card-img-top" alt="Industry Conference">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>May 15, 2025</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>New York City</span>
+                                        </div>
+                                        <h3 class="card-title h4">Industry Leadership Summit</h3>
+                                        <p class="card-text">Join us at the Industry Leadership Summit, where our team will be presenting innovative strategies for business growth in the digital age. Network with industry leaders and gain valuable insights into emerging trends.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Highlights:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Keynote presentation by our CEO</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Interactive workshop on strategic planning</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Networking opportunities with industry peers</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/event2.jpg" class="card-img-top" alt="Workshop">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>June 8, 2025</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>Virtual Event</span>
+                                        </div>
+                                        <h3 class="card-title h4">Digital Transformation Workshop</h3>
+                                        <p class="card-text">Our virtual workshop will explore practical strategies for implementing digital transformation in your organization. Learn from our experts about leveraging technology to drive efficiency and growth.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Highlights:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Interactive online sessions</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Case studies and success stories</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Q&A with transformation experts</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/event3.jpg" class="card-img-top" alt="Networking Event">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>July 22, 2025</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>Chicago</span>
+                                        </div>
+                                        <h3 class="card-title h4">Business Innovation Forum</h3>
+                                        <p class="card-text">The Business Innovation Forum brings together thought leaders and innovators to discuss cutting-edge approaches to common business challenges. BM will be hosting a panel discussion on adaptive strategies for market changes.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Highlights:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Expert panel discussions</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Innovation showcase</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Structured networking sessions</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Ongoing Projects -->
+                    <div class="tab-pane fade" id="ongoing" role="tabpanel" aria-labelledby="ongoing-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/project1.jpg" class="card-img-top" alt="Research Project">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>Jan - Dec 2025</span>
+                                            <span class="activity-type"><i class="fas fa-tag me-2"></i>Research</span>
+                                        </div>
+                                        <h3 class="card-title h4">Market Trends Research Initiative</h3>
+                                        <p class="card-text">Our ongoing research initiative is analyzing emerging market trends across multiple industries to provide valuable insights for strategic planning and innovation.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Project Goals:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Identify emerging industry trends</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Analyze market disruption factors</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Publish quarterly insight reports</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/project2.jpg" class="card-img-top" alt="Community Project">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>Mar - Sep 2025</span>
+                                            <span class="activity-type"><i class="fas fa-tag me-2"></i>Community</span>
+                                        </div>
+                                        <h3 class="card-title h4">Business Mentorship Program</h3>
+                                        <p class="card-text">BM is currently running a mentorship program pairing experienced business leaders with emerging entrepreneurs to foster growth and innovation in our community.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Program Features:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> One-on-one mentorship sessions</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Monthly workshop series</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Resource sharing and networking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/project3.jpg" class="card-img-top" alt="Innovation Project">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>Feb - Nov 2025</span>
+                                            <span class="activity-type"><i class="fas fa-tag me-2"></i>Innovation</span>
+                                        </div>
+                                        <h3 class="card-title h4">Digital Solutions Development</h3>
+                                        <p class="card-text">Our team is developing a suite of digital tools designed to help businesses streamline operations and enhance customer experiences in the post-pandemic landscape.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Project Focus:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Remote team collaboration tools</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Customer experience platforms</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Data analytics solutions</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Past Activities -->
+                    <div class="tab-pane fade" id="past" role="tabpanel" aria-labelledby="past-tab">
+                        <div class="row">
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/past1.jpg" class="card-img-top" alt="Past Conference">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>November 12, 2024</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>San Francisco</span>
+                                        </div>
+                                        <h3 class="card-title h4">Industry Conference 2024</h3>
+                                        <p class="card-text">BM was a featured presenter at the 2024 Industry Conference, sharing insights on emerging trends and innovative approaches to common challenges.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Outcomes:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Established new industry partnerships</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Presented research findings to 500+ attendees</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Featured in industry publications</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/past2.jpg" class="card-img-top" alt="Workshop Series">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>August-October 2024</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>Multiple Locations</span>
+                                        </div>
+                                        <h3 class="card-title h4">Strategic Planning Workshop Series</h3>
+                                        <p class="card-text">BM conducted a series of workshops helping businesses develop robust strategic plans for growth and adaptation in changing market conditions.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Outcomes:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Trained 200+ business leaders</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> 95% participant satisfaction rating</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Created practical planning templates</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/past3.jpg" class="card-img-top" alt="Community Event">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>May 5, 2024</span>
+                                            <span class="activity-location"><i class="fas fa-map-marker-alt me-2"></i>Boston</span>
+                                        </div>
+                                        <h3 class="card-title h4">Small Business Innovation Summit</h3>
+                                        <p class="card-text">This one-day summit focused on helping small businesses leverage innovation to compete effectively in their markets.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Outcomes:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> 150+ small business attendees</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Launched ongoing mentorship connections</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Created resource library for participants</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <div class="card activity-card h-100">
+                                    <img src="assets/images/activities/past4.jpg" class="card-img-top" alt="Research Publication">
+                                    <div class="card-body">
+                                        <div class="activity-meta d-flex justify-content-between mb-3">
+                                            <span class="activity-date"><i class="far fa-calendar-alt me-2"></i>February 2024</span>
+                                            <span class="activity-type"><i class="fas fa-tag me-2"></i>Research</span>
+                                        </div>
+                                        <h3 class="card-title h4">Market Trends Report 2024</h3>
+                                        <p class="card-text">Our comprehensive research report analyzed key market trends and provided strategic recommendations for businesses across multiple industries.</p>
+                                        <div class="activity-highlights mt-3">
+                                            <h4 class="h6">Outcomes:</h4>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Downloaded by 5,000+ professionals</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Cited in major industry publications</li>
+                                                <li><i class="fas fa-check-circle text-primary me-2"></i> Led to multiple consulting engagements</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mb-5" data-aos="fade-up">
+                        <h2 class="section-title text-center">Our Partners</h2>
+                        <p class="lead">Organizations we collaborate with to deliver exceptional value</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="row align-items-center text-center">
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up">
+                                <img src="assets/images/partners/partner1.png" alt="Partner 1" class="img-fluid partner-logo">
+                            </div>
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                <img src="assets/images/partners/partner2.png" alt="Partner 2" class="img-fluid partner-logo">
+                            </div>
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="200">
+                                <img src="assets/images/partners/partner3.png" alt="Partner 3" class="img-fluid partner-logo">
+                            </div>
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                                <img src="assets/images/partners/partner4.png" alt="Partner 4" class="img-fluid partner-logo">
+                            </div>
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="400">
+                                <img src="assets/images/partners/partner5.png" alt="Partner 5" class="img-fluid partner-logo">
+                            </div>
+                            <div class="col-4 col-md-2 mb-4" data-aos="fade-up" data-aos-delay="500">
+                                <img src="assets/images/partners/partner6.png" alt="Partner 6" class="img-fluid partner-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section text-white text-center" style="background-color: var(--primary-color);">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8" data-aos="fade-up">
+                        <h2 class="mb-4">Want to Participate in Our Activities?</h2>
+                        <p class="lead mb-4">Join us for upcoming events or explore partnership opportunities.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <a href="apply.html" class="btn btn-light btn-lg px-4 me-sm-3">Apply Now</a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+   <footer class="bg-dark py-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>BM Company</h5>
+                <p class="text-muted">Providing innovative solutions and exceptional service since 2010.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="apply.html">How to Apply</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>
+                    <a href="mailto:contact@bmcompany.com">
+                        <i class="fas fa-envelope me-2"></i>contact@bmcompany.com
+                    </a>
+                </p>
+                <div class="social-links mt-3">
+                    <a href="https://facebook.com/BMCompany" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <div class="text-center">
+            <p class="text-muted mb-0">&copy; 2025 BM Company. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+    
+    <!-- Custom JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
