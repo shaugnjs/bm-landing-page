@@ -127,7 +127,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--primary-color);
+    
   }
   
   /* Hero Section */
@@ -135,7 +135,7 @@
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 150px 0;
+    padding: 300px 0;
     position: relative;
   }
   
@@ -146,7 +146,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5); /* Dark overlay */
+    background: rgba(0,0,0,0.4); /* Dark overlay */
   }
   
   .hero-content {
@@ -280,7 +280,8 @@
     font-size: 0.85rem;
     color: #6c757d;
   }
-  
+
+
   /* Application Steps */
   .application-steps {
     position: relative;
@@ -453,12 +454,13 @@
   .nav-pills .nav-link.active {
     background-color: var(--primary-color);
     color: white !important;
+    border-bottom: none !important;
   }
   
   .nav-pills .nav-link:hover:not(.active) {
     background-color: rgba(52, 152, 219, 0.1);
   }
-  
+
   /* Animation Enhancements */
   [data-aos] {
     pointer-events: none;
