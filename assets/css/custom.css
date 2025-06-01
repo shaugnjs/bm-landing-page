@@ -1,6 +1,6 @@
 /* Custom CSS Variables */
 :root {
-    --primary-color: #3498db;      /* Main brand color - blue */
+    --primary-color: #ff8f00;      /* Main brand color - blue */
     --secondary-color: #2c3e50;    /* Secondary color - dark blue/gray */
     --accent-color: #e74c3c;       /* Accent color - red */
     --text-color: #333333;
@@ -359,8 +359,8 @@
   .partner-logo {
     opacity: 0.7;
     transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
-    max-height: 60px;
-    filter: grayscale(100%);
+    max-height: 80px;
+    filter: grayscale(50%);
   }
   
   .partner-logo:hover {
